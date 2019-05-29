@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<title>Simple JavaScript Calculator</title>
 	<meta charset="utf-8">
 	
 
 </head>
 
 <body>
+	<header><h1 style="text-align: center;">JavaScript Calculator</h1></header>
 
-	<form>
+	<form style="margin-left: 42%; margin-top: 2%;">
 		Value 1: <input type="text" id="value1"><br>
 		Value 2: <input type="text" id="value2"><br>
 		Operator: 
@@ -17,11 +19,12 @@
 			<option value="min">Minus</option>
 			<option value="div">Divide</option>
 			<option value="mul">Multiply</option>
-		</select><br>
-		<button type="button">Calculate</button>
-		
-	</form>
+		</select>
+		<button type="button" onclick="calc()">Calculate</button>
+	</form><br>
+	
+	<div id="result" style="margin-left: 46%;"></div>
 
 </body>
-	<script src="calculator.js"></script>
+	<script src="_js/calculator.js"></script>
 </html>
